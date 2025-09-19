@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Conceptos Básicos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>JavaScript - Conceptos Básicos</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introducción</a></li>
+        <li><a href="#fundamentos">Fundamentos</a></li>
+        <li><a href="#control">Control de Flujo</a></li>
+        <li><a href="#funciones">Funciones</a></li>
+        <li><a href="#objetos">Objetos</a></li>
+        <li><a href="#otros">Otros temas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>1. Introducción</h2>
+      <h3>¿Qué es y para qué se usa?</h3>
+      <p>Es un lenguaje de programación que hace que las páginas web sean dinámicas e interactivas. Se utiliza para validar formularios, crear animaciones, responder a las acciones del usuario, y actualizar contenido sin recargar la página (gracias a AJAX y Fetch).</p>
+      <img src="Imagen.webp" alt="Usos de JavaScript">
+
+      <h3>Historia y contexto</h3>
+      <p>JavaScript fue creado en 1995 por Brendan Eich para dar interactividad a las páginas web. Hoy, además de complementar a HTML y CSS, se usa para desarrollar aplicaciones completas en el navegador y en el servidor con Node.js.</p>
+      <img src="Creacion.jpeg" alt="Creación de JavaScript">
+
+      <h3>Diferencia con Java</h3>
+      <p>Aunque tienen nombres parecidos, son lenguajes distintos. <strong>Java</strong> es compilado y robusto, usado para aplicaciones a gran escala. <strong>JavaScript</strong> es interpretado y enfocado en la web.</p>
+      <img src="Comparacion.jpg" alt="Comparación Java y JavaScript">
+
+      <h3>Complemento con HTML y CSS</h3>
+      <p><strong>HTML</strong> define la estructura, <strong>CSS</strong> le da estilo, y <strong>JavaScript</strong> agrega la lógica e interactividad. Los tres son esenciales para crear la web moderna.</p>
+      <img src="comphtml.jpeg" alt="HTML, CSS y JavaScript">
+    </section>
+
+    <section id="fundamentos">
+      <h2>2. Fundamentos del Lenguaje</h2>
+      <p><strong>Sintaxis:</strong> Las instrucciones terminan con <code>;</code>. Los comentarios se escriben con <code>//</code> para una línea y <code>/* ... */</code> para varias.</p>
+      <p><strong>Variables:</strong> Se usan <code>var</code>, <code>let</code> y <code>const</code>. Se recomienda usar <code>let</code> para variables que cambian y <code>const</code> para las que no.</p>
+      <p><strong>Tipos de datos:</strong> Los tipos primitivos incluyen <code>String</code>, <code>Number</code>, <code>Boolean</code>, <code>Null</code>, <code>Undefined</code>, <code>Symbol</code> y <code>BigInt</code>.</p>
+      <p><strong>Estructuras de datos:</strong> Los **arrays** son listas ordenadas, y los **objetos** guardan pares de clave-valor.</p>
+      <p><strong>Operadores:</strong> Permiten realizar operaciones como aritmética (+, -, *, /), lógica (&&, ||) y comparación (==, ===).</p>
+    </section>
+
+    <section id="control">
+      <h2>3. Control de Flujo</h2>
+      <p><strong>Condicionales:</strong> <code>if/else</code> se usan para tomar decisiones, y <code>switch</code> para manejar múltiples opciones.</p>
+      <p><strong>Bucles:</strong> <code>for</code> y <code>while</code> permiten repetir bloques de código. <code>break</code> y <code>continue</code> se usan para controlar su ejecución.</p>
+    </section>
+
+    <section id="funciones">
+      <h2>4. Funciones</h2>
+      <p>Las funciones son bloques de código reutilizables. Pueden recibir <strong>parámetros</strong> y devolver un resultado con <code>return</code>.</p>
+      <p><strong>Funciones flecha:</strong> Tienen una sintaxis más corta, como <code>(a, b) => a + b</code>, y son muy útiles en callbacks.</p>
+      <p><strong>Alcance (Scope):</strong> Define la accesibilidad de una variable. Puede ser global, de función o de bloque.</p>
+    </section>
+
+    <section id="objetos">
+      <h2>5. Objetos y colecciones</h2>
+      <p><strong>Objetos:</strong> Son estructuras que agrupan propiedades (valores) y métodos (funciones). Se accede a sus miembros con la sintaxis de punto: <code>persona.nombre</code>.</p>
+      <p><strong>Métodos de arrays:</strong> Los arrays tienen métodos integrados como <code>push()</code> (añadir al final), <code>pop()</code> (eliminar el último) y <code>map()</code> (transformar elementos).</p>
+    </section>
+
+    <section id="otros">
+      <h2>6. Otros temas</h2>
+      <p><strong>DOM:</strong> El Document Object Model (DOM) representa la página como un árbol que JavaScript puede modificar en tiempo real.</p>
+      <p><strong>Eventos:</strong> Acciones como clics o entradas de texto que permiten la interacción del usuario.</p>
+      <p><strong>Herramientas:</strong> <code>alert</code> muestra un mensaje, <code>prompt</code> pide un dato y <code>console.log</code> imprime en la consola para depurar errores.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Frontend: Fundamentos de JavaScript</p>
+  </footer>
+
+</body>
+</html>
