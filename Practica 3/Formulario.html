@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Alumno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {             width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+      
+        color: #333; 
+        }
+        table, th, td {
+            border: 1px solid rgb(216, 37, 37);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+        background-color: #4CAF50; /* Verde sutil para el botón */
+        color: white; /* Texto blanco en el botón */
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Alumno</h1>
+
+    <form id="alumnoForm">
+        <label for="nombre">Nombre del Alumno:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" required><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required><br>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="text" id="telefono" required><br>
+        <button type="button" onclick="agregarAlumno()" class="btn btn-primary">Agregar Alumno</button>
+
+        <button type="button" onclick="agregarAlumno()">Agregar Alumno</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+    </form>
+
+    <h2>Lista de Alumnos</h2>
+    <table id="alumnoTabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Matrícula</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se llenarán los datos -->
+        </tbody>
+    </table>
+
+    <script src="ExtraccionDeDts.js"></script>
+</body>
+</html>
