@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #50E3C2, #4A90E2);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .welcome-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+      text-align: center;
+      
+    }
+    h1 {
+      color: #4A90E2;
+      font-size: 24px;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1 id="welcomeMessage">Bienvenido</h1>
+    <p>Has iniciado sesión correctamente.</p>
+  </div>
+
+  <script>
+    // Extraer el correo desde la URL
+    const params = new URLSearchParams(window.location.search);
+    const correo = params.get("correo"); // Busca el parámetro 'correo'
+
+    if (correo) {
+      // Si el parámetro existe, actualiza el mensaje
+      document.getElementById("welcomeMessage").textContent = "Bienvenido " + correo;
+    }
+  </script>
+</body>
+</html>

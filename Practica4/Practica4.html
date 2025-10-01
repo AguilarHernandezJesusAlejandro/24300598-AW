@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container" id="loginView">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <a href="segPag.html" class="button">Ingresar</a>
+      
+      <p id="errorMessage"></p>
+    </form>
+  </div>
+
+  <div class="welcome-container hidden" id="welcomeView">
+    <h2 id="welcomeMessage"></h2>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>
