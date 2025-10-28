@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Calificaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h2 class="text-center mb-4">Calculadora de Calificaciones</h2>
+
+    <div class="card p-4 shadow-sm">
+      <div class="mb-3">
+        <label for="numMaterias" class="form-label">¿Cuántas materias vas a ingresar?</label>
+        <input type="number" id="numMaterias" class="form-control" min="1" placeholder="Ejemplo: 3">
+      </div>
+
+      <button id="btnGenerar" class="btn btn-primary">Generar Materias</button>
+    </div>
+
+    <div id="formMaterias" class="mt-4"></div>
+
+    <div id="resultado" class="mt-4"></div>
+  </div>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>
