@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica no.9 - Control de Especialidades</title>
+    <link rel="stylesheet" href="css/especialidades.css">
+    
+ 
+</head>
+<body>
+
+    <div id="sidebar-menu">
+        <div>
+            <div class="sidebar-header">
+                <h3>Practica</h3>
+                <small>Administración</small>
+            </div>
+            
+            <div class="menu-links mt-3">
+                <a href="dashboard.html" class="nav-link-item active">
+                    Dashboard
+                </a>
+                <a href="pacientes.html" class="nav-link-item">
+                    Control de Pacientes
+                </a>
+                <a href="agenda.html" class="nav-link-item">
+                    Control de Agenda
+                </a>
+                <a href="medicos.html" class="nav-link-item">
+                    Control de Personal
+                </a>
+                <a href="tarifas.html" class="nav-link-item">
+                    Gestor de Tarifas
+                </a>
+                <a href="pagos.html" class="nav-link-item">
+                    Pagos
+                </a>
+                <a href="reportes.html" class="nav-link-item">
+                    Reportes
+                </a>
+                <a href="bitacoras.html" class="nav-link-item">
+                    Bitácoras
+                </a>
+                <a href="especialidades.html" class="nav-link-item">
+                    Control de Especialidades
+                </a>
+            </div>
+        </div>
+        
+        <div class="p-3">
+            <button id="logoutButton">
+                 Cerrar Sesión
+            </button>
+        </div>
+    </div>
+
+    <div id="content-area">
+        <div class="container-fluid p-4">
+            <h1>Control de Especialidades</h1>
+            <hr>
+
+            <div> 
+                <div>
+                    Ingreso de Nueva Especialidad
+                </div>
+                <div>
+                    
+                    <form action="especialidades.php" method="POST">
+                        <div>
+                            <table border="1" cellspacing="0" cellpadding="5">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 35%;">Campo</th>
+                                        <th style="width: 65%;">Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="nombre_especialidad">Nombre Especialidad</label></td>
+                                        <td><input type="text" id="nombre_especialidad" name="nombre_especialidad" maxlength="100" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="descripcion">Descripción</label></td>
+                                        <td><textarea id="descripcion" name="descripcion" maxlength="250" rows="3"></textarea></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div>
+                            <button type="submit">
+                                Guardar Datos
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+    </div>
+    
+    <script>
+        // Lógica de Cerrar Sesión simplificada 
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            if (confirm("¿Deseas cerrar la sesión de CPUCINA?")) {
+                window.location.href = 'index.html'; 
+            }
+        });
+        
+        // Función para marcar el link activo
+        const path = window.location.pathname;
+        const currentLink = path.substring(path.lastIndexOf('/') + 1);
+        
+        document.querySelectorAll('.nav-link-item').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === currentLink) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
